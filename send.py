@@ -1,7 +1,6 @@
 import requests
 from teamdetails import team
 from datetime import datetime
-import multiprocessing
 
 
 def send_message(set_time, cid):
@@ -12,7 +11,7 @@ def send_message(set_time, cid):
             'content': f"{team}"
         }
         send_header = {
-            "authorization": "NTY0MzE1MjMxMDQwNTY5MzU0.GPyldX.tl7GvWElz3J3uIhQBZ6kmTeFfw26qQVEXJcv18"
+            "authorization": "OTkyMjk0ODE4NDI2NDAwOTA5.Gj6Dib.9mC6N_7UhZ7vzcd_dNnwcNlnCoUOqNir3-Qzcs"
         }
         issent = True
         checktime = True
@@ -30,7 +29,7 @@ def send_message(set_time, cid):
 
 
 
-send_message("10:50:00", "907525794992099360")
+send_message("11:10:00", "907525794992099360")
 
 # p1 = multiprocessing.Process(target=send_message, args=("09:09:00", "907525794992099360"))
 # p2 = multiprocessing.Process(target=send_message, args=("09:11:00", "991611117518454784"))
